@@ -63,7 +63,7 @@ export default function NavBar() {
           <div className="flex justify-center absolute top-5 left-20">
           <img
                 alt="Logo"
-                src={"/images/partials/LogoSite/logo_color.png"}
+                src="/images/partials/LogoSite/logo_color.png"
                 style={{ width:'98.20px', height: '70'}}
                 className="navImage"
               />
