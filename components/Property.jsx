@@ -30,7 +30,7 @@ const Property = ({ property: {
          
          {Object.entries(categories).map((category) =>
               category[1].id_property_type === id_property_type ? 
-              (<div style={{borderTopLeftRadius: 8,background:"rgb(219, 39, 35)",color:'white', float:"left", position: 'absolute', padding:'1px 15px'}}> {category[1].name}</div> ) 
+              (<div key={category[1].id_property_type} style={{borderTopLeftRadius: 8,background:"rgb(219, 39, 35)",color:'white', float:"left", position: 'absolute', padding:'1px 15px'}}> {category[1].name}</div> ) 
               : null
             )}
          <img
