@@ -43,7 +43,7 @@ function App({ Component, pageProps }) {
   return (
     <main className={Montserrat.className}>
       <Head>
-      <link rel="icon" type="image/x-icon" href="/images/partials/LogoSite/logo_color.png"/>
+      <link rel="icon" type="image/x-icon" href="/images/partials/LogoSite/Logo_color.png"/>
       </Head>
       <div>
         <Layout>
