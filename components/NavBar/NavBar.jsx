@@ -61,11 +61,10 @@ export default function NavBar() {
       <Popover>
         <div className=" flex px-5 py-3 items-center sm:px-6 md:justify-center md:space-x-10 bg-white text-black h-25">
           <div className="flex justify-center absolute top-5 left-20">
-          <Image
+          <img
                 alt="Logo"
                 src={"/images/partials/LogoSite/logo_color.png"}
-                height={70}
-                width={98.20}
+                style={{ width:'98.20px', height: '70'}}
                 className="navImage"
               />
             
