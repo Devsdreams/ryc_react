@@ -87,8 +87,8 @@ body {
   width: 100%!important;
  }
  .navImage{
-  margin-top: 20px;
-  width: 85%;
+  margin-top: 5px;
+  width: 85% !important;
   height: 20% !important;
  }
 }
