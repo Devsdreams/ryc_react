@@ -3,10 +3,8 @@ import Link from "next/link";
 import FSocialMediaBlock from "./FSocialMediaBlock";
 import Image from "next/image";
 const Conoce = [
-  { name: "Inicio", href: "/Blog/Section" },
-  { name: "Nosotros", href: "/search?venta=true" },
-  { name: "Villa Toscana", href: "/search?alquiler=true" },
-  { name: "Blog", href: "/Contact" },
+  { name: "Inicio", href: "/" },
+  { name: "Nosotros", href: "/AboutUs" },
   { name: "Contacto", href: "/Contact" },
 ];
 
