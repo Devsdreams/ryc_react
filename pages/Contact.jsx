@@ -9,7 +9,7 @@ const Contact = () => {
         <title>Contactanos</title>
       </Head>
       <div className="container mb-10">
-          <div className="md:w-6/6 lg:6/6 xs:6/6 imagen-contact">
+          <div className="md:w-full lg:full xs:w-full imagen-contact">
               
           </div>
       </div>
