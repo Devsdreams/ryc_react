@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
       <div className="container mb-5 px-5  mx-auto md:flex lg:flex">
         
-        <div className="lg:w-2/3 md:w-1/2 xs:w-6/6 rounded-lg sm:mr-10 md:px-16 sm:mb-16 xs:mb-16 relative h-auto">
+        <div className="lg:w-2/3 md:w-1/2 xs:w-full rounded-lg sm:mr-10 md:px-16 sm:mb-16 xs:mb-16 relative h-auto">
           <img
               src="/images/ventana.jpg"
               className="relative w-6/6 inset-0"
