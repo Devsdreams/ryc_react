@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #FFFFFF;
+}
+
+.imagen_height {
+  height: 150px!important;
+}
+.text-neutral-50 {
+  --tw-text-opacity:0.5;
+  color:rgb(0 0 0 / var(--tw-text-opacity));
+  
+}
+.venta {
+  --ag-background-venta:rgb(234 179 8 / var(--tw-text-opacity));
+  --ag-border-radius:18px;
+  background-color: var(--ag-background-venta);
+  border-radius: var(--ag-border-radius);
+  
+}
+.image-mobile{
+  display: none;
+}
+.video-pc{
+  display: block;
+}
+.mobil .w-100:nth-child(2){
+  width: 75%;
+ }
+.mobil .w-100:nth-child(2){
+  width: 25%;
+ }
+ @media (min-width:901px) {
+  .navImage{
+    
+    height: 85% !important;
+   }
+ }
+@media (max-width:900px){
+  .mobil-mt-0{
+    margin-top: 0!important;
+  }
+  .image-mobile{
+    display: block;
+    background-image: url('/images/partials/Banners/BANNER HOME 1.png');
+    background-size: cover, 100%;
+    background-position: top, center;
+
+  }
+  .imagen-banner-about{
+    display: block;
+    background-image: url('/images/partials/Banners/BANNER ABOUT 1.png');
+    background-size: cover, 100% !important;
+    border-radius: 0 !important;
+    background-position: center top;
+    background-repeat:no-repeat;
+    height: 450px !important;
+  }
+  .imagen-banner{
+    display: none;
+  }
+  .video-pc{
+    display: none;
+  }
+ .mobil{
+  display: block;
+ }
+ .mobil .w-100{
+  width: 100%!important;
+ }
+ .navImage{
+  margin-top: 20px;
+  width: 85%;
+  height: 20% !important;
+ }
+}
+.h-25{
+  height: 8rem!important;
+}
+.imagen-banner{
+  background-image: url('/images/partials/Banners/BANNER HOME 1.png');
+  background-size: contain, 100%;
+  background-position: center top;
+  height: 580px;
+}
+.imagen-banner-about{
+  background-image: url('/images/partials/Banners/BANNER ABOUT 1.png');
+  background-size: contain, 100%;
+  background-position: center top;
+  height: 580px;
+}
+.bg-image-banner-about{
+  background-image: url('/images/partials/Banners/BANNER WHY RYC.png');
+  background-size: cover, 100%;
+  background-position: center top;
+  height: auto;
+}
+.imagen-contact{
+  background-image: url('/images/partials/Banners/BANNER  CONTACT.png');
+  background-size: cover, 100%;
+  background-position: center top;
+  height: 450px;
+}
+body{
+  background-color: #F7F7F7!important;
+}
+.bg-secundary{
+  background-color: #1D293E !important;
+  color: white !important;
+}
+.color_secundary{
+  color: rgb(219, 39, 35);
+}
+.border-color-secundary{
+  border: 1px solid rgb(219, 39, 35);
+  border-radius: 50%;
+}
+.footer-bg{
+  background-color: #FFF;
+}
+
