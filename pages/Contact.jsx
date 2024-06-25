@@ -46,7 +46,7 @@ const Contact = () => {
                       </Link>
                         <Link href="tel:573104191840"
                                   className="text-gray-500 hover:text-dorado flex flex-wrap">
-                                  <FaPhoneAlt className="mr-3" /> Cra 41 # 69D - 51 Local 8
+                                  <FaMapMarkerAlt className="mr-3" /> Cra 41 # 69D - 51 Local 8
                         </Link>
                         <Link href="tel:573104191840"
                                   className="text-gray-500 hover:text-dorado flex flex-wrap">
