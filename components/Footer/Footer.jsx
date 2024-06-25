@@ -5,6 +5,7 @@ import Image from "next/image";
 const Conoce = [
   { name: "Inicio", href: "/" },
   { name: "Nosotros", href: "/AboutUs" },
+  { name: "Nosotros", href: "/aboutUs" },
   { name: "Contacto", href: "/Contact" },
 ];
 

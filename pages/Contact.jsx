@@ -1,6 +1,8 @@
 import ContactInfo from "../components/Gallery/ContactInfo";
 import Form from "../components/Form/contacto";
 import Head from "next/head";
+import Link from "next/link";
+import { FaFacebookF, FaWhatsapp, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -13,7 +15,7 @@ const Contact = () => {
               
           </div>
       </div>
-      <div className="container mb-5 px-5  mx-auto md:flex lg:flex">
+      <div className="w-full mb-5 px-5  mx-auto md:flex lg:flex">
         
         <div className="lg:w-2/3 md:w-1/2 xs:w-full rounded-lg sm:mr-10 md:px-16 sm:mb-16 xs:mb-16 relative h-auto">
           <img
@@ -31,6 +33,49 @@ const Contact = () => {
           </p>
           <p className="text-base font-normal">Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas más información sobre nuestros servicios y propiedades, 
         no dudes en contactarnos. Nuestro equipo de atención al cliente está disponible para asistirte en todo lo que necesites. </p>
+        <p>
+        <div className="w-full  px-10 py-8 mt-5 rounded-2xl border">
+              <h1 className="font-bold text-xl">Información de Contacto</h1>
+              <div className="flex mt-5">
+                <div className="w-4/6 space-y-2">
+              
+                      {/* seccion de informacion basica */}
+                      <Link  href="mailto:rycinmobiliaria1@hotmail.com"
+                              className="text-gray-500 hover:text-dorado flex flex-wrap items-center">
+                              <FaEnvelope className="mr-3" /> rycinmobiliaria1@hotmail.com
+                      </Link>
+                        <Link href="tel:573104191840"
+                                  className="text-gray-500 hover:text-dorado flex flex-wrap">
+                                  <FaPhoneAlt className="mr-3" /> Cra 41 # 69D - 51 Local 8
+                        </Link>
+                        <Link href="tel:573104191840"
+                                  className="text-gray-500 hover:text-dorado flex flex-wrap">
+                                  <FaPhoneAlt className="mr-3" /> (310) 419 18-40
+                        </Link>
+                        
+                    </div>
+                    <div className="w-2/6 flex space-x-4 items-end bg-white justify-end px-5 py-5">
+                      {/* seccion de redes sociales */}
+                    <Link href="https://es-la.facebook.com/rycinmobiliariaconstructora/"
+                              className="text-gray-500 hover:text-dorado">
+                              <FaFacebookF /> 
+                    </Link>
+                    <Link href="https://wa.me/3104191840?text=Quiero un servicio"
+                                className="text-gray-500 hover:text-dorado">
+                                <FaWhatsapp />
+                    </Link>
+                    
+                    <Link href="https://www.instagram.com/inmobiliariaryc/"
+                                className="text-gray-500 hover:text-dorado">
+                                <FaInstagram  />
+                    </Link>
+                </div>
+              </div>
+              
+        </div>
+        
+
+        </p>
         </div>
         <Form />
       </div>

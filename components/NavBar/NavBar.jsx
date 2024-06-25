@@ -89,7 +89,7 @@ export default function NavBar() {
             </Popover.Button>
           </div>
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-center">
-            <Popover.Group as="nav" className="flex space-x-8">
+            <Popover.Group as="nav" className="flex space-x-16">
             <Link
                 href="/"
                 className="text-base font-medium  hover:text-neutral-300"

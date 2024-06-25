@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GroupImage = (props) => (
   <section className="text-gray-600 bg-white body-font">
-    <div className="container px-5 py-10 mx-auto flex flex-wrap">
+    <div className="w-full px-5 py-10 mx-auto flex flex-wrap justify-center">
       <div className="flex flex-wrap md:-m-2 -m-1">
         <div className="flex flex-wrap w-3/6">
           <div className="md:p-2 p-1 w-1/2">

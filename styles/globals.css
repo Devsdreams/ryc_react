@@ -70,8 +70,8 @@ body {
     background-image: url('/images/partials/Banners/BANNER ABOUT 1.png');
     background-size: cover, 100% !important;
     border-radius: 0 !important;
-    background-position: center top;
-    background-repeat:no-repeat;
+    background-position: center top !important;
+    background-repeat: no-repeat!important;
     height: 450px !important;
   }
   .imagen-banner{
@@ -103,7 +103,7 @@ body {
 }
 .imagen-banner-about{
   background-image: url('/images/partials/Banners/BANNER ABOUT 1.png');
-  background-size: contain, 100%;
+  background-size: cover, 100%;
   background-position: center top;
   height: 580px;
 }

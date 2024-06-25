@@ -7,6 +7,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const AboutUs = () => {
   return (
     <div>
@@ -138,7 +139,7 @@ const AboutUs = () => {
        
       />
       <div className="md:h-6 xl:6"></div>
-      <div className="container w-6/6 mt-16 bg-image-banner-about items-center py-16">
+      <div className="w-full mt-16 bg-image-banner-about items-center py-16">
           <div className="md:flex px-16 items-center">
               <div className="md:w-4/6 items-center text-white">
               <h3 className="font-bold text-white mb-3 max-[900px]:text-center">¿Por Qué Elegir R&C?</h3>
@@ -158,16 +159,18 @@ const AboutUs = () => {
         title_div="Nuestros Logros "
         paragrah_div=""
         divide=""
-        firstTitle="* Clientes Atendidos "
+        firstTitle="Clientes Atendidos "
         firstBody="Más de 500 clientes satisfechos. "
         svg_one=""
+        counter_one="500"
         text_center="text-center"
         padding_top_title="pb-0"
-        margin_bottom_div="mb-0"
-        secondTitle="* Inmuebles Vendidos  "
+        margin_bottom_div="mb-44"
+        secondTitle="Inmuebles Vendidos  "
         secondBody="Más de 550 propiedades vendidas. "
         svg_two=""
-       
+        counter_two="550"
+        
       />
       
     </div>

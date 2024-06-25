@@ -1,6 +1,5 @@
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import Image from "next/image";
 import Link from "next/link";
 import {
   FaFacebookSquare,

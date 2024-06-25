@@ -90,21 +90,21 @@ const recaptchaRef = React.createRef();
             <div className="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pt-4 lg:pb-24">
                {/* columna */}
                <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-                  <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl mb-5">
                      {property.title}
                   </h1>
-                  <div className="grid  md:grid-cols-2 gap-4">
+                  <div className="grid  md:grid-cols-2 gap-4 mb-5">
                         <div className="text-4xl">
                            {/* Precio de (renta o venta) dependiendo */}
                            {property.rent_price > 0 ? 
                               <>
-                                 <span className="text-medium text-neutral-600">Precio de renta</span>
-                                 <p className="font-black text-gray-500 uppercase mr-8">{property.rent_price_label}<span  className="font-large text-gray-500">/Mes</span></p>
+                                 <span className="text-base text-neutral-600">Precio de renta</span>
+                                 <p className="font-black text-gray-500 uppercase mr-8">{property.rent_price_label}<span  className="text-[18px] capitalice text-gray-500">/Mes</span></p>
                               </>
                            : property.sale_price > 0 ?
                               <>
                                  <span className={styles.title_text_price + " text-neutral-600"}>Precio de venta</span>
-                                 <p className="font-black text-gray-500 uppercase">{property.sale_price_label} <span className={styles.item_text+ " text-neutral-600"}>COP</span> </p>
+                                 <p className="font-black text-gray-500 uppercase">{property.sale_price_label} <span className={styles.item_text+ " text-neutral-600 text-[16px]"}>COP</span> </p>
                               </>
                            : null}
                         </div>
@@ -116,23 +116,23 @@ const recaptchaRef = React.createRef();
                   </div>
                   <div className="bg-white relative grid gap-3  px-5 py-6 sm:gap-6 sm:p-8 lg:grid-cols-3">
                      {/* Caracteristicas  del producto*/}
-                     <Characteristics content={property.country_label} imagesrc={'/images/logotypeYellow.png'} />
-                     <Characteristics content={property.city_label} imagesrc={'/images/logotypeYellow.png'} />
-                     <Characteristics content={property.zone_label} imagesrc={'/images/logotypeYellow.png'} />
-                     <Characteristics content={property.availability_label} imagesrc={'/images/logotypeYellow.png'} />
-                     {property.maintenance_fee != 0 ? <Characteristics content={`${property.maintenance_fee} Administración`} imagesrc={'/images/logotypeYellow.png'} /> : false}
-                     {property.built_area != 0 ? <Characteristics content={`${property.built_area} m² Área Construida`} imagesrc={'/images/logotypeYellow.png'} /> : false}
-                     {property.bathrooms != 0 ? <Characteristics content={`${property.bathrooms} Baños`} imagesrc={'/images/logotypeYellow.png'} /> : null}
-                     {property.bedrooms != 0 ? <Characteristics content={`${property.bedrooms} Habitaciones`} imagesrc={'/images/logotypeYellow.png'} /> : null}
-                     {property.garages != 0 ? <Characteristics content={`${property.garages} Garages`} imagesrc={'/images/logotypeYellow.png'} /> : null}
-                     {property.floor != 0 ? <Characteristics content={`${property.floor} Piso`} imagesrc={'/images/logotypeYellow.png'} /> : null}
-                     {property.floor != 0 ? <Characteristics content={`Año ${property.building_date}`} imagesrc={'/images/logotypeYellow.png'} /> : null}
-                     <Characteristics content={`Ref. ${property.id_property}`} imagesrc={'/images/logotypeYellow.png'} />
+                     <Characteristics content={property.country_label} imagesrc={'/images/partials/LogoSite/Logo_color.png'} />
+                     <Characteristics content={property.city_label} imagesrc={'/images/partials/LogoSite/Logo_color.png'} />
+                     <Characteristics content={property.zone_label} imagesrc={'/images/partials/LogoSite/Logo_color.png'} />
+                     <Characteristics content={property.availability_label} imagesrc={'/images/partials/LogoSite/Logo_color.png'} />
+                     {property.maintenance_fee != 0 ? <Characteristics content={`${property.maintenance_fee} Administración`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} /> : false}
+                     {property.built_area != 0 ? <Characteristics content={`${property.built_area} m² Área Construida`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} /> : false}
+                     {property.bathrooms != 0 ? <Characteristics content={`${property.bathrooms} Baños`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} /> : null}
+                     {property.bedrooms != 0 ? <Characteristics content={`${property.bedrooms} Habitaciones`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} /> : null}
+                     {property.garages != 0 ? <Characteristics content={`${property.garages} Garages`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} /> : null}
+                     {property.floor != 0 ? <Characteristics content={`${property.floor} Piso`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} /> : null}
+                     {property.floor != 0 ? <Characteristics content={`Año ${property.building_date}`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} /> : null}
+                     <Characteristics content={`Ref. ${property.id_property}`} imagesrc={'/images/partials/LogoSite/Logo_color.png'} />
                   </div>
                </div>
                {/* columna  */}
                <div className="mt-4 lg:row-span-3 lg:mt-0">
-                  <h1 className="text-left my-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  <h1 className="text-left my-6 text-md font-semibold tracking-tight text-gray-900 sm:text-lg">
                      Compartir con:
                   </h1>
                   <div className={styles.div_container}>
@@ -195,48 +195,45 @@ const recaptchaRef = React.createRef();
                      :null}
                   </div>
                   <br />
-                     <h1 className="text-left my-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                     <h1 className="text-left my-6 text-2xl font-semibold tracking-tight text-gray-900 sm:text-lg">
                      Contactanos:
                   </h1>
                   <Link
-                     className="group flex items-center justify-between rounded-lg border border-current px-5 py-3 text-dorado transition-colors  hover:bg-gradient-to-r hover:from-dorado hover:via-dorado-super-light hover:to-dorado  active:bg-dorado"
-                     href="tel:3205178956"
+                     className="group flex items-center justify-between rounded-lg  px-5 py-0 text-dorado transition-colors  hover:bg-gradient-to-r hover:from-dorado hover:via-dorado-super-light hover:to-dorado  active:bg-dorado"
+                     href="tel:3104191840"
                   >
-                     <span className="flex font-medium transition-colors group-hover:text-white">
-                        <FaPhoneAlt className="mr-4 mt-1" /> 3205178956
+                     <span className="flex font-medium transition-colors group-hover:text-black">
+                        <FaPhoneAlt className={"mr-4 mt-1 "+ styles.color_red } /> (310) 419 18-40
                      </span>
-                     <span className="ml-4 flex-shrink-0 rounded-full border border-dorado bg-white p-2 group-active:border-dorado">
-                        <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <span className={"ml-4 flex-shrink-0 border  rounded-full  bg-white p-2 group-active:border-dorado " +styles.color_red}>
+                        <svg className="h-5 w-5 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                      </span>
                   </Link>
-                  <Link className="mt-4 group flex items-center justify-between rounded-lg border border-current px-5 py-3 text-dorado transition-colors  hover:bg-gradient-to-r hover:from-dorado hover:via-dorado-super-light hover:to-dorado active:bg-dorado"  href="mailto:luxury@rossanaulloque.com">
-                     <span className="flex font-medium transition-colors group-hover:text-white">
-                        <BsFillEnvelopeFill className="mr-4 mt-1" /> luxury@rossanaulloque.com
+                  <Link className="mt-4 group flex items-center justify-between rounded-lg  px-5  text-dorado transition-colors  hover:bg-gradient-to-r hover:from-dorado hover:via-dorado-super-light hover:to-dorado active:bg-dorado"  href="mailto:luxury@rossanaulloque.com">
+                     <span className="flex font-medium transition-colors group-hover:text-black">
+                        <BsFillEnvelopeFill className={"mr-4 mt-1 "+ styles.color_red} /> rycinmobiliaria1@hotmail.com
                      </span>
-                     <span className="ml-4 flex-shrink-0 rounded-full border border-dorado bg-white p-2 group-active:border-dorado">
+                     <span className={"ml-4 flex-shrink-0 rounded-full border border-dorado bg-white p-2 group-active:border-dorado " +styles.color_red}>
                         <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path  strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                      </span>
                   </Link>
-                  <div className={classNames(open ? "visible" : "hidden", "")}>
-                     <h1 className="my-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  <div className={classNames(open ? "visible border rounded-md p-5 mt-5 border-[#1D293E]" : "hidden", "")}>
+                     <h1 className=" text-lg font-semibold tracking-tight text-gray-900 sm:text-lg ">
                         ¿Prefieres que te contactemos?
                      </h1>
-                     <form className="flex flex-col" onSubmit={submitContact}>
+                     <p className="text-md mt-2">Aquí llena la informacvión correspondiente para enviarte nuestros servicios</p>
+                     <form className="flex flex-col space-y-4" onSubmit={submitContact}>
                         <ReCAPTCHA  ref={recaptchaRef} size="invisible" sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={onReCAPTCHAChange}/>
-                        <label>Tu nombre *</label>
-                        <input id="name" name="name" type="text" className="form-input px-3 py-2 rounded-md" required />
-                        <label className="mt-4">Correo electronico*</label>
-                        <input id="mail" name="mail" type="email" className="form-input px-3 py-2 rounded-md" required />
-                        <label className="mt-4">Celular*</label>
-                        <input id="tel" name="tel" type="tel" className="form-input px-3 py-2 rounded-md" required />
-                        <label className="mt-4">Mensaje</label>
-                        <textarea id="mensage" name="mensage" rows="4" className="form-input px-3 py-2 rounded-md" />
+                        <input id="name" name="name" type="text" placeholder="Tu Nombre (*)" className="form-input text-black outline-0 px-3 py-2 border-b border-b-gray-300" required />
+                        <input id="mail" name="mail" type="email" placeholder="Correo electronico*" className="form-input px-3 py-2 text-black outline-0 border-b border-b-gray-300" required />
+                        <input id="tel" name="tel" type="tel" placeholder="Celular*" className="form-input px-3 py-2 text-black outline-0 border-b border-b-gray-300" required />
+                        <textarea id="mensage" name="mensage" rows="4" placeholder="Mensaje" className="form-input px-3 py-2 text-black outline-0 border-b border-b-gray-300" />
                         <p>Al enviar tus datos <Link href={'/Docs/DataTreatment'} className="text-sm my-2 underline">aceptas recibir información sobre ofertas inmobiliarias</Link></p>
-                        <button type="submit" className="px-4 py-2 font-bold text-white bg-gradient-to-r from-dorado via-dorado-super-light to-dorado rounded-md">
+                        <button type="submit" className="px-4 py-2 font-normal text-white bg-[#1D293E] rounded-md">
                            Enviar mensaje
                         </button>
                      </form>
@@ -271,7 +268,7 @@ const recaptchaRef = React.createRef();
                               <div className="bg-white relative grid gap-3  px-5 py-6 sm:gap-6 sm:p-8 lg:grid-cols-3">
                                  {property.features.internal.map((item) => (
                                     <div key={item.id} className="-m-3 p-2 flex items-start rounded-lg">
-                                       <Characteristics content={item.nombre} imagesrc={'/images/logotype.png'} />
+                                       <Characteristics content={item.nombre} imagesrc={'/images/partials/LogoSite/Logo_color.png'} />
                                     </div>
                                  ))}
                               </div>
@@ -291,7 +288,7 @@ const recaptchaRef = React.createRef();
                                  {/* backdrop-blur-xl bg-white/70   */}
                                  {property.features.external.map((item) => (
                                     <div key={item.id}  className="-m-3 p-2 flex items-start rounded-lg">
-                                        <Characteristics content={item.nombre} imagesrc={'/images/logotypeYellow.png'} />
+                                        <Characteristics content={item.nombre} imagesrc={'/images/partials/LogoSite/Logo_color.png'} />
                                     </div>
                                  ))}
                               </div>

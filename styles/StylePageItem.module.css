@@ -12,14 +12,17 @@
 }
 
 .item {
-    font-size: 32px;
+    font-size: 27px;
     padding-left: 15px;
     padding-right: 15px;
+    color: rgb(219, 39, 35);
+}
+.color_red{
+    color: rgb(219, 39, 35)!important;
 }
 
 .item:hover{
-    --tw-text-opacity:1;
-    --ag-color-text:rgb(234 179 8 / var(--tw-text-opacity));
+    --ag-color-text:#1D293E !important;
     color:var(--ag-color-text) ;
 }
 

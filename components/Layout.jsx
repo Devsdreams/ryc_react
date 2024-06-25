@@ -13,10 +13,7 @@ const Layaut = ({ children }) => (
     <main className="mb-5">
         { children }
     </main>
-    <footer className="mt-16">
-        <div className="h-20">
-
-        </div>
+    <footer className="mt-6">
         <Futter/>
     </footer>
 </div>

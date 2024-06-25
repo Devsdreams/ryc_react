@@ -1,8 +1,9 @@
 import Link from "next/link";
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 const SectionInfoIcons = (props) =>
 (
-    <section className={"text-gray-600 bg-white body-font w-6/6 pt-16 md:pl-16 md:pr-16 "+props.margin_bottom_div}>
+    <section className={"text-gray-600 bg-white body-font w-full pt-16 md:pl-16 md:pr-16 "+props.margin_bottom_div}>
         { props.title_div ? (
             <div className="sm:text-center">
             <div className="relative  py-1 sm:py-24 lg:pb-8 lg:pt-2">
@@ -26,13 +27,15 @@ const SectionInfoIcons = (props) =>
                     <div className={"flex  h-full  md:p-8 flex-col "+props.padding_top_title}>
                         <div className="text-center mx-auto items-center mb-3">
                             <div className="w-6/6 h-8 mb-10 flex items-center text-center justify-center ">
-                                <img className={props.width_image} src={props.svg_one} alt="" srcset="" />
+                                {props.svg_one ? ( <img className={props.width_image} src={props.svg_one} alt="" srcset="" /> ) : null}
+                                {props.counter_one ? ( <AnimatedCounter target={props.counter_one} />) : null }
                             </div>
                             <h2 className="text-gray-900 text-lg title-font font-bold max-[900px]:text-center">{props.firstTitle}</h2>
                         </div>
                         <div className="px-4 md:w-1/2 min-[901px]:hidden">
                             <div className="flex  h-full px-5 flex-col">
                                 <div className={"flex-grow "+props.text_center}>
+                              
                                     <p className="leading-relaxed text-base">{props.firstBody}</p>
                                 </div>
                             </div>
@@ -45,7 +48,8 @@ const SectionInfoIcons = (props) =>
                     <div className={"flex  h-full  md:p-8 flex-col "+props.padding_top_title}>
                         <div className="text-center items-center mb-3">
                             <div className="w-6/6 h-8 mb-10 flex items-center justify-center">
-                                <img className={props.width_image} src={props.svg_two} alt="" srcset="" />
+                                {props.svg_two ? (<img className={props.width_image} src={props.svg_two} alt="" srcset="" />) : null}
+                                {props.counter_two ? ( <AnimatedCounter target={props.counter_two} />) : null}
                             </div>
                             <h2 className="text-gray-900 text-lg title-font font-bold">{props.secondTitle}</h2>
                         </div>

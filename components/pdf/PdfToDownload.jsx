@@ -11,7 +11,7 @@ const convertHTMLtoPDF = ()=>{
     doc.html(document.querySelector("#content"), {
         margin:[25, 0, 20, 0],
         callback: function(pdf){
-            pdf.save("Rossana Propiedad ref "+property.id_property+".pdf");
+            pdf.save("RYC-"+property.title+" ref-"+property.id_property+".pdf");
         }
     });
 }
@@ -66,7 +66,7 @@ const sendingForm = async (event) => {
                      <button style={{marginTop:"20px", color:"#fff",padding:"10px",border:"1px solid #000", borderRadius:"8px", background:"#000"}} type="submit">Descargar</button>
                 </form> */}
                 <button onClick={convertHTMLtoPDF}>
-                    <Image alt="boton de descarga" className="md:mt-6" width={181} height={55} src={'/images/Boton-descarga.jpg'} />
+                    <Image alt="boton de descarga" className="md:mt-6" width={181} height={55} src={'/images/Boton-descarga1.png'} />
                 </button>
                 
                 </div>

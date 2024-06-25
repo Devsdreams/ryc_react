@@ -109,10 +109,10 @@ export default function Home({ propertysAll, Banner, Categories }) {
           <div className="relative  py-16 sm:py-24 lg:pb-8 lg:pt-20">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"> 
               <h2 className="mt-2 text-2xl font-semibold text-gray-900 tracking-tight ">
-              Encuentra aqui el Inmueble que siempre has soñado
+              Encuentra aquí el Inmueble que siempre has soñado
               </h2>
               <p className="mt-5 max-w-prose mx-auto font-light text-xl text-gray-500">
-              Aqui encontraras los mejores
+              Aquí encontraras los mejores
               </p>
             </div>
           </div>
@@ -135,7 +135,8 @@ export default function Home({ propertysAll, Banner, Categories }) {
         Contamos con una amplia cartera de inmuebles que se adapta a todas tus necesidades y presupuestos. Ya sea que estés 
         buscando una casa, un apartamento, un local comercial o un terreno, en R&C tenemos la solución perfecta para ti. "
         svg_one="/icons/doing.svg"
-        padding_bottom_div="mb-16"
+        padding_bottom_div="mb-24"
+        margin_bottom_div="mb-24"
         padding_top_div="mt-16"
         secondTitle="Nuestro Servicio"
         secondBody="En R&C, nos enorgullecemos de brindar un servicio integral y personalizado. 

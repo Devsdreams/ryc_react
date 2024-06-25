@@ -13,8 +13,6 @@ const Property = ({ property: {
    id_property_type,
    main_image,
    city_label,
-   for_rent,
-   for_sale,
    rent_price_label,
    sale_price_label,
    bathrooms,
