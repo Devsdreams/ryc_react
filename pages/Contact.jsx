@@ -2,7 +2,7 @@ import ContactInfo from "../components/Gallery/ContactInfo";
 import Form from "../components/Form/contacto";
 import Head from "next/head";
 import Link from "next/link";
-import { FaFacebookF, FaWhatsapp, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaFacebookF, FaWhatsapp, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {
   return (
