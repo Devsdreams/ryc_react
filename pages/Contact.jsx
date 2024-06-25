@@ -10,7 +10,7 @@ const Contact = () => {
       <Head>
         <title>Contactanos</title>
       </Head>
-      <div className="container mb-10">
+      <div className="w-full mb-10">
           <div className="md:w-full lg:full xs:w-full imagen-contact">
               
           </div>
