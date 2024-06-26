@@ -61,12 +61,15 @@ export default function NavBar() {
       <Popover>
         <div className=" flex px-5 py-3 items-center sm:px-6 md:justify-center md:space-x-10 bg-white text-black h-25">
           <div className="flex justify-center absolute top-5 left-20">
+          <Link href={"/"}>
           <img
                 alt="Logo"
                 src="/images/partials/LogoSite/Logo_color.png"
                 style={{ width:'98.20px', height: '70px'}}
                 className="navImage"
               />
+          </Link>
+          
             
           </div>
           <div className="-mr-2 -my-2 md:hidden">

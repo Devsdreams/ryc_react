@@ -112,7 +112,7 @@ export default function Home({ propertysAll, Banner, Categories }) {
               Encuentra aquí el Inmueble que siempre has soñado
               </h2>
               <p className="mt-5 max-w-prose mx-auto font-light text-xl text-gray-500">
-              Aquí encontraras los mejores
+              Aquí encontrarás la mejor selección de inmuebles para tí
               </p>
             </div>
           </div>
